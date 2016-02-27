@@ -1,0 +1,86 @@
+<html lang="ch">
+    <head>
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="http://192.168.1.102:8080/astro/yunshi.css">
+        <style type="text/css">
+        </style>
+    </head>
+    <body>
+        <div class="xingzuo">
+            <div class="xingzuotitle">{{.TodayDesc.Chinese}}</div>
+            <div class="xingzuotime">{{.TodayDesc.Time}}</div>
+        </div>
+        <HR style="FILTER: alpha(opacity=100,finishopacity=0,style=3)" width="100%" color=#987cb9 SIZE=3>
+        <div class="jinriyunshi"> 
+            <div class="yunshititle">
+                今日运势
+            </div>
+            <div>
+                <table class="jinriyunshitable">
+                    <tr>
+                        <td class="title">综合运势</td>
+                        <td class="content">{{.TodayDesc.Zonghe}}</td>
+						<td class="title">爱情运势</td>
+                        <td class="content">{{.TodayDesc.Love}}</td>
+                    </tr>
+                    <tr>
+                        <td class="title">工作运</td>
+                        <td class="content">{{.TodayDesc.Work}}</td>
+                        <td class="title">财运</td>
+                        <td class="content">{{.TodayDesc.Money}}</td>
+                    </tr>
+                    <tr>
+                        <td class="title">健康指数</td>
+                        <td class="content">{{.TodayDesc.Health}}</td>
+                        <td class="title">开运水晶</td>
+                        <td class="content">{{.TodayDesc.Kaiyun}}</td>
+                    </tr>
+                    <tr>
+                        <td class="title">幸运颜色</td>
+                        <td class="content">{{.TodayDesc.Color}}</td>
+                        <td class="title">幸运数字</td>
+                        <td class="content">{{.TodayDesc.Number}}</td>
+                    </tr>
+                    <tr>
+                        <td class="title">贵人星座</td>
+                        <td class="content">{{.TodayDesc.Friend}}</td>
+                        <td class="title"></td>
+                        <td class="content"></td>
+                    </tr>
+                </table>
+                <div class="jinriyunshidetail">
+                    {{.TodayDesc.Detail | unescaped}}
+                </div>
+            </div>
+        </div>
+        <HR style="FILTER: alpha(opacity=100,finishopacity=0,style=3)" width="100%" color=#987cb9 SIZE=3>
+        <div class="benzhouyunshi"> 
+            <div class="yunshititle">
+                本周运势
+            </div>
+            <div class="benzhouyunshitime">
+                {{.WeekDesc.Range}}
+            </div>
+            <div>
+                <table class="benzhouyunshitable">
+                    <tr><td class="title">整体运势</td></tr>
+                    <tr><td class="content">{{.WeekDesc.General | unescaped}}</td></tr>
+                    <tr><td class="title">爱情运势</td></tr>
+                    <tr><td class="content">{{.WeekDesc.Love | unescaped}}</td></tr>
+                    <tr><td class="title">工作学业运</td></tr>
+                    <tr><td class="content">{{.WeekDesc.Work | unescaped}}</td></tr>
+                    <tr><td class="title">红色警报日</td></tr>
+                    <tr><td class="content">{{.WeekDesc.RedAlarm}}</td></tr>
+                    <tr><td class="title">吉星高照日</td></tr>
+                    <tr><td class="content">{{.WeekDesc.Lucky}}</td></tr>
+                    <tr><td class="title">开运方位/地点</td></tr>
+                    <tr><td class="content">{{.WeekDesc.Position}}</td></tr>
+                    <tr><td class="title">本周新尝试</td></tr>
+                    <tr><td class="content">{{.WeekDesc.Try | unescaped}}</td></tr>
+                    <tr><td class="title">贵人星座</td></tr>
+                    <tr><td class="content">{{.WeekDesc.Friend}}</td></tr>
+                </table>
+            </div>
+        </div>
+    </body>
+</html>

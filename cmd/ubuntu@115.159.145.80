@@ -1,0 +1,11 @@
+{
+	"IP" : "",
+	"port" : 8081,
+	"DBUser" : "root",
+	"DBPassword" : "",
+	"DBName" : "test",
+    "QiNiuScope" : "wudired", 
+    "QiNiuTokenExpiredTime": 600,
+    "QiNiuAkey" : "i_mCdZgGd26uFjUT1-upLNjb1fFQsiW5IdNYn-9-",
+    "QiNiuSkey" : "SpGVenXMoUeowsl2YaW9lPNZUl6HpCTh6XSe0m4L"
+}

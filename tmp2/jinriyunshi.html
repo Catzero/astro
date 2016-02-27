@@ -1,0 +1,88 @@
+<html lang="ch">
+    <head>
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="http://192.168.1.102:8080/astro/yunshi.css">
+        <style type="text/css">
+        </style>
+    </head>
+    <body>
+        <div class="xingzuo">
+            <div class="xingzuotitle">{{.Astro}}</div>
+            <div class="xingzuotime">03/21-04/19</div>
+        </div>
+        <HR style="FILTER: alpha(opacity=100,finishopacity=0,style=3)" width="100%" color=#987cb9 SIZE=3>
+        <div class="jinriyunshi"> 
+            <div class="yunshititle">
+                今日运势
+            </div>
+            <div>
+                <table class="jinriyunshitable">
+                    <tr>
+                        <td class="title">综合运势</td>
+                        <td class="content">{{.Today.Zonghe}}</td>
+                        <td class="title">爱情运</td>
+                        <td class="content">{{.Love}}</td>
+                    </tr>
+                    <tr>
+                        <td class="title">工作运</td>
+                        <td class="content">{{.Work}}</td>
+                        <td class="title">财运</td>
+                        <td class="content">{{.Money}}</td>
+                    </tr>
+                    <tr>
+                        <td class="title">健康指数</td>
+                        <td class="content">{{.Health}}</td>
+                        <td class="title">开运水晶</td>
+                        <td class="content">{{.KaiYun}}</td>
+                    </tr>
+                    <tr>
+                        <td class="title">幸运颜色</td>
+                        <td class="content">{{.Color}}</td>
+                        <td class="title">幸运数字</td>
+                        <td class="content">{{.Number}}</td>
+                    </tr>
+                    <tr>
+                        <td class="title">贵人星座</td>
+                        <td class="content">{{.Friends}}</td>
+                        <td class="title"></td>
+                        <td class="content"></td>
+                    </tr>
+                </table>
+                <div class="jinriyunshidetail">
+                    {{.Detail}}
+                    宜：今天要相信你的判断力，你们往往会有一些莫名的灵感出现，这些灵感在今天是比较准确的。爱情上今天适合重归情场，特别适合之前受过情伤的双鱼座振作起来。<br><br>忌：工作上容易在今天陷入低潮期，不要急于有工作表现，今天明显不是合适的时候，今天不适合做跟钱有关的决定，哪怕你有很不错的想法，也要缓一缓。<br><br>月亮能量：月亮落处女座2.21°-处女座14.35°（此处是指每日月亮行动轨迹）
+                    }
+                </div>
+            </div>
+        </div>
+        <HR style="FILTER: alpha(opacity=100,finishopacity=0,style=3)" width="100%" color=#987cb9 SIZE=3>
+        <div class="benzhouyunshi"> 
+            <div class="yunshititle">
+                本周运势
+            </div>
+            <div class="benzhouyunshitime">
+                有效日期：2016-02-22~2016-02-28
+            </div>
+            <div>
+                <table class="benzhouyunshitable">
+                    <tr><td class="title">整体运势</td></tr>
+                    <tr><td class="content">你们渴望离开现有的环境去争取更多的机会，但是很容易受到家庭或者现有环境中女性的干涉而不能如愿。可是我还是建议你们可以主动去对外争取一些机会，不论是工作还是对外的学习，这都是适合去对外发展的时期，只是看你自己能不能坚持下来。</td></tr>
+                    <tr><td class="title">爱情运势</td></tr>
+                    <tr><td class="content">保持情绪的稳定，才能在面对感情的时候采取最理智的态度。本周情感方面比较顺遂，可如果你们不能很好的处理好自己的问题，恐怕在接下来的几周彼此关系方面就不会那么顺利了。还是那句话，凡事多想想后果，而不能贪图一时痛快。<br>单身狗：容易遇到感情骗子。<br>有伴儿：关于财务的问题方面可能会出现纠纷。</td></tr>
+                    <tr><td class="title">工作学业运</td></tr>
+                    <tr><td class="content"></td></tr>
+                    <tr><td class="title">红色警报日</td></tr>
+                    <tr><td class="content"></td></tr>
+                    <tr><td class="title">吉星高照日</td></tr>
+                    <tr><td class="content"></td></tr>
+                    <tr><td class="title">开运方位/地点</td></tr>
+                    <tr><td class="content"></td></tr>
+                    <tr><td class="title">本周新尝试</td></tr>
+                    <tr><td class="content"></td></tr>
+                    <tr><td class="title">贵人星座</td></tr>
+                    <tr><td class="content">双子座</td></tr>
+                </table>
+            </div>
+        </div>
+    </body>
+</html>
