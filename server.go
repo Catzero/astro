@@ -2,9 +2,9 @@ package server
 
 import (
 	"fmt"
-	"github.com/astro/common"
-	"github.com/astro/db"
-	"github.com/astro/handler"
+	"github.com/Catzero/astro/common"
+	"github.com/Catzero/astro/db"
+	"github.com/Catzero/astro/handler"
 	"log"
 	"net/http"
 )

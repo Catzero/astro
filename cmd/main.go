@@ -1,7 +1,7 @@
 package main
 
 import (
-	"github.com/astro"
+	"github.com/Catzero/astro"
 )
 
 func main() {

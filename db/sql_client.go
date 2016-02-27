@@ -3,7 +3,7 @@ package db
 import (
 	"database/sql"
 	"fmt"
-	"github.com/astro/common"
+	"github.com/Catzero/astro/common"
 	_ "github.com/go-sql-driver/mysql"
 	"log"
 	//"strconv"
