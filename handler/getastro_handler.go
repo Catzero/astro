@@ -3,8 +3,8 @@ package handler
 import (
 	"encoding/json"
 	"fmt"
-	"github.com/astro/common"
-	"github.com/astro/db"
+	"github.com/Catzero/astro/common"
+	"github.com/Catzero/astro/db"
 	"html/template"
 	"io/ioutil"
 	"log"
