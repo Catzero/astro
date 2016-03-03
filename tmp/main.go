@@ -50,6 +50,7 @@ func CallToday(starname string) {
 	fmt.Println("sb", titname, " ", titday)
 
 	detail, _ := doc.Find(".content .words").Html()
+	detail = strings.Replace(detail, "　　", "", -1)
 
 	todaydesc := db.AstroTodayDesc{
 		Astro:   starname,
@@ -105,6 +106,7 @@ func CallWeek(starname string) {
 		title := contentSelection.Find("p").Text()
 		if title != "" {
 			detail, _ := contentSelection.Html()
+			detail = strings.Replace(detail, "　　", "", -1)
 			array[cnt2][1] = detail
 		}
 		cnt2 = cnt2 + 1

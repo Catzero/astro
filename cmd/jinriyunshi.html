@@ -1,9 +1,12 @@
 <html lang="ch">
     <head>
         <meta charset="utf-8">
-        <link rel="stylesheet" href="http://192.168.1.102:8080/astro/yunshi.css">
-        <style type="text/css">
-        </style>
+		<link rel="stylesheet" href="http://192.168.1.104:8080/astrowushi/Fortune.css">^M
+		<meta name="apple-mobile-web-app-capable" content="yes">^M
+		<meta name="viewport" content=" initial-scale=1.0, maximum-scale=1.0, user-scalable=no"/>^M
+		<meta name="format-detection" content="telephone=no">^M
+		<style type="text/css"></style>^M
+
     </head>
     <body>
         <div class="xingzuo">
@@ -19,15 +22,15 @@
                 <table class="jinriyunshitable">
                     <tr>
                         <td class="title">综合运势</td>
-                        <td class="content">{{.TodayDesc.Zonghe}}</td>
+						<td class="content"><img src="http://192.168.1.104:8080/astrowushi/Image/{{.TodayDesc.Zonghe}}.png" width="30%"></td>
 						<td class="title">爱情运势</td>
-                        <td class="content">{{.TodayDesc.Love}}</td>
+						<td class="content"><img src="http://192.168.1.104:8080/astrowushi/Image/{{.TodayDesc.Love}}.png" width="30%"></td>
                     </tr>
                     <tr>
                         <td class="title">工作运</td>
-                        <td class="content">{{.TodayDesc.Work}}</td>
+						<td class="content"><img src="http://192.168.1.104:8080/astrowushi/Image/{{.TodayDesc.Work}}.png" width="30%"></td>
                         <td class="title">财运</td>
-                        <td class="content">{{.TodayDesc.Money}}</td>
+						<td class="content"><img src="http://192.168.1.104:8080/astrowushi/Image/{{.TodayDesc.Money}}.png" width="30%"></td>
                     </tr>
                     <tr>
                         <td class="title">健康指数</td>
